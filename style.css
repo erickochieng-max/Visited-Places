@@ -19,6 +19,9 @@ h1,h2{
     text-align: center;
 }
 
+h2:hover{
+    color: green;
+}
 form{
     display: flex;
     flex-direction: column;
