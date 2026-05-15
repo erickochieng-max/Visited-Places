@@ -41,10 +41,12 @@ contactForm.addEventListener("submit",function (event) {
 
         
         const newContact = new Contact(name, phone, email);
+
         contacts.push(newContact);
 
         
         contactList.innerHTML = "";
+
         contacts.forEach(function (contact) {
             contactList.innerHTML +=
                 contact.contactInfo();
@@ -58,5 +60,35 @@ contactForm.addEventListener("submit",function (event) {
 
  function addTask(){
 
-    const taskInput = document.getElementById("taskInput")
+    const taskInput = document.getElementById("taskInput");
+    const taskText = taskInput.value;
+
+    if(taskText === ""){
+        alert("please enter a task");
+        return;
+    }
+
+    tasks.push(taskText);
+
+    displayTask();
+
+    taskInput.value = "";
+    
+ }
+
+ function displayTask(){
+    const taskList = document.getElementById("taskList");
+
+    taskList.innerHTML = "";
+    tasks.forEach(function(task){
+
+        const li = document.createElement("li");
+        li.innerText = task;
+
+        taskList.appendChild(li);
+
+        setTimeout(function(){
+            location.reload();
+        }, 10000)
+    });
  }
