@@ -15,7 +15,7 @@ Code along
 
 # Setup and Installation
 - Git clone the repository: https://github.com/erickochieng-max/Visited-Places.git
-- Click here to view the website:
+- Click here to view the website:https://erickochieng-max.github.io/Visited-Places/
 - Open the repository from Ubuntu to VS code
 - Access files on the VS code
 - Open the files
