@@ -49,7 +49,14 @@ contactForm.addEventListener("submit",function (event) {
             contactList.innerHTML +=
                 contact.contactInfo();
         });
-        
+
         contactForm.reset();
     }
 );
+
+ let tasks = [];
+
+ function addTask(){
+
+    const taskInput = document.getElementById("taskInput")
+ }
