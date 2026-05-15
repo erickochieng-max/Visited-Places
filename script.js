@@ -108,4 +108,8 @@ function displayTask() {
 
         taskList.appendChild(li);
     });
+
+    setTimeout(function(){
+        location.reload();
+    },10000);
 }
