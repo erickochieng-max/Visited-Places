@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(25, 44, 0);
+    background-color:  rgb(25, 44, 0);
 }
 
 .container{
@@ -12,7 +12,7 @@ body{
     background: white;
     padding: 25px;
     border-radius: 10px;
-    box-shadow:0px 0px 10px rgba(46, 241, 215, 0.4);
+    box-shadow:0px 0px 10px white;
 }
 
 h1,h2{
@@ -66,7 +66,7 @@ button:hover{
     background:white;
     padding:20px;
     border-radius:10px;
-    box-shadow:0px 0px 10px rgba(0, 236, 253, 0.2);
+    box-shadow:0px 0px 10px white;
 }
 
 #taskInput{
@@ -89,4 +89,9 @@ button{
 
 button:hover{
     background:green;
+}
+
+#taskList{
+    margin-top:20px;
+    padding:0;
 }
